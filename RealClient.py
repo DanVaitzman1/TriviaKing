@@ -92,7 +92,7 @@ class RealClient(Client):
         while not self.conn_failed:
             try:
                 self.TCP_socket.send(b'')
-            except ConnectionResetError:
+            except (ConnectionResetError,BrokenPipeError):
                 # If we lost connection between the client and the server we will terminate the process
                 self.getting_answer_process.terminate()
                 break
