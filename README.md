@@ -1,1 +1,1 @@
-## ****Hapoel Beer Sheva Trivia Game
+## Hapoel Beer Sheva Trivia Game
